@@ -1,6 +1,6 @@
 # ETL-Project
 
-![Proyecto ETL](img/ETL.jpg)
+![Proyecto ETL](img/ETL.png)
 
 ## Índice
 
