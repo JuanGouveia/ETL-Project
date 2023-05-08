@@ -1,0 +1,73 @@
+-- MySQL Workbench Forward Engineering
+
+SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHECKS=0;
+SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0;
+SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='ONLY_FULL_GROUP_BY,STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION';
+
+-- -----------------------------------------------------
+-- Schema mydb
+-- -----------------------------------------------------
+-- -----------------------------------------------------
+-- Schema formula_1
+-- -----------------------------------------------------
+
+-- -----------------------------------------------------
+-- Schema formula_1
+-- -----------------------------------------------------
+CREATE SCHEMA IF NOT EXISTS `formula_1` DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci ;
+USE `formula_1` ;
+
+-- -----------------------------------------------------
+-- Table `formula_1`.`Data_Circuits`
+-- -----------------------------------------------------
+CREATE TABLE IF NOT EXISTS `formula_1`.`Data_Circuits` (
+  `Race_ID` INT NOT NULL,
+  `Year` INT NULL,
+  `Race_Number` INT NULL,
+  `Circuit ID` INT NULL,
+  `Grand_Prix` VARCHAR(45) NULL,
+  `Date` DATE NULL,
+  `Time` VARCHAR(45) NULL,
+  `Name` VARCHAR(45) NULL,
+  `Location` VARCHAR(45) NULL,
+  `Country` VARCHAR(45) NULL,
+  PRIMARY KEY (`Race_ID`))
+ENGINE = InnoDB;
+
+-- -----------------------------------------------------
+-- Table `formula_1`.`Data_Driver`
+-- -----------------------------------------------------
+CREATE TABLE IF NOT EXISTS `formula_1`.`Data_Driver` (
+  `Driver` VARCHAR(45) NULL,
+  `Nationality` VARCHAR(45) NULL,
+  `Date_of_Birth` VARCHAR(45) NULL,
+  `Driver_ID` INT NOT NULL,
+  PRIMARY KEY (`Driver_ID`))
+ENGINE = InnoDB;
+
+
+-- -----------------------------------------------------
+-- Table `formula_1`.`Safety_Car`
+-- -----------------------------------------------------
+CREATE TABLE IF NOT EXISTS `formula_1`.`Safety_Car` (
+  `Race_ID` INT NULL,
+  `Cause` VARCHAR(45) NULL,
+  `Deployed_(Lap)` VARCHAR(45) NULL,
+  `Called_in_(lap)` VARCHAR(45) NULL,
+  `Number_of_Full_Laps` VARCHAR(45) NULL,
+  `Year` VARCHAR(45) NULL,
+  `Safety_Car_ID` INT NOT NULL,
+  `Data_Circuits_Race_ID` INT NOT NULL,
+  PRIMARY KEY (`Safety_Car_ID`),
+  INDEX `fk_Safety_Car_Data_Circuits_idx` (`Data_Circuits_Race_ID` ASC) VISIBLE,
+  CONSTRAINT `fk_Safety_Car_Data_Circuits`
+    FOREIGN KEY (`Data_Circuits_Race_ID`)
+    REFERENCES `formula_1`.`Data_Circuits` (`Race_ID`)
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION)
+ENGINE = InnoDB;
+
+
+SET SQL_MODE=@OLD_SQL_MODE;
+SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS;
+SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS;
