@@ -58,24 +58,21 @@ Como metodos de extracción, usamos en primer lugar, la descarga de los archivos
 
 - En primer lugar descargamos los csv de la primera url, cambiamos los nombres de las columnas adaptándolas a nuestros objetivos, quitamos las columnas que no nos sirven para nuestra investigación y arreglamos los últimos detalles.
 
-<br>
+
 ![Data Circuit](img/data_circuits.png)
-<br>
-<br>
+
 
 - En segundo lugar realizamos el web scraping en la segunda url sobre la tabla que nos interesa, nuevamente cambiamos los nombres de las columnas, creamos una nueva columna separando los años de los grand prix y arreglamos los últimos detalles.
 
-<br>
+
 ![Safety Car](img/safety_car.png)
-<br>
-<br>
+
 
 - Y en tercer lugar sacamos la información de los pilotos mediante una API, una vez más cambiamos los nombres de las columnas, eliminamos columnas que no nos interesan y arreglamos los últimos detalles.
 
-<br>
+
 ![Data Drivers](img/data_drivers.png)
-<br>
-<br>
+
 
 <a name="carga"/>
 
