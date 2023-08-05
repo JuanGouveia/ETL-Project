@@ -59,7 +59,7 @@ Como metodos de extracción, usamos en primer lugar, la descarga de los archivos
 - En primer lugar descargamos los csv de la primera url, cambiamos los nombres de las columnas adaptándolas a nuestros objetivos, quitamos las columnas que no nos sirven para nuestra investigación y arreglamos los últimos detalles.
 
 
-![Data Circuit](img/data_circuits.png)
+![Circuits](img/circuits.png)
 
 
 - En segundo lugar realizamos el web scraping en la segunda url sobre la tabla que nos interesa, nuevamente cambiamos los nombres de las columnas, creamos una nueva columna separando los años de los grand prix y arreglamos los últimos detalles.
@@ -71,7 +71,7 @@ Como metodos de extracción, usamos en primer lugar, la descarga de los archivos
 - Y en tercer lugar sacamos la información de los pilotos mediante una API, una vez más cambiamos los nombres de las columnas, eliminamos columnas que no nos interesan y arreglamos los últimos detalles.
 
 
-![Data Drivers](img/data_drivers.png)
+![Drivers](img/drivers.png)
 
 
 <a name="carga"/>
@@ -82,7 +82,7 @@ Una vez tenemos los dataframes limpios, los guardamos como archivo csv y los int
 
 <br>
 
-![SQL Diagram](img/diagrama_f1.png)
+![SQL Diagram](img/diagrama_sql.png)
 
 </details>
 
