@@ -19,7 +19,7 @@ En el siguiente proyecto sobre el proceso ETL (Extract, Transform, Load), nos en
 
 ## Objetivo principal
 
-El proyecto se divide en varias fases:
+El propósito de este proyecto es lograr una base de datos coherente y lista para su análisis.
 
  <a name="análisis"/>
 
