@@ -5,10 +5,9 @@
 ## Índice
 
 1. [Descripción](#descripción)
-2. [Extracción](#extracción)
-3. [Transformación](#transformación)
-4. [Carga](#carga)
-5. [Conclusiones](#conclusiones)
+2. [Objetivo principal](#objetivo)
+3. [Análisis](#análisis)
+4. [Conclusiones](#conclusiones)
 
 <a name="descripción"/>
 
@@ -16,11 +15,15 @@
 
 En el siguiente proyecto sobre el proceso ETL (Extract, Transform, Load), nos encargamos de extraer información desde varias fuentes de información distintas, acomodar y limpiar dicha información y, por último, almacenar esa información.
 
+<a name="objetivo"/>
+
 ## Objetivo principal
 
 El proyecto se divide en varias fases:
 
- <a name="extracción"/>
+ <a name="análisis"/>
+
+## Análisis
 
 ### Extracción
 
@@ -51,30 +54,25 @@ Como metodos de extracción, usamos en primer lugar, la descarga de los archivos
 ![F1 API](img/api.png)
 
 </details>
-
- <a name="transformación"/>
  
 ### Transformación
 
 - En primer lugar descargamos los csv de la primera url, cambiamos los nombres de las columnas adaptándolas a nuestros objetivos, quitamos las columnas que no nos sirven para nuestra investigación y arreglamos los últimos detalles.
 
 
-![Circuits](img/circuits.png)
+![Circuits](img/circuit.png)
 
 
 - En segundo lugar realizamos el web scraping en la segunda url sobre la tabla que nos interesa, nuevamente cambiamos los nombres de las columnas, creamos una nueva columna separando los años de los grand prix y arreglamos los últimos detalles.
 
 
-![Safety Car](img/safety_car.png)
+![Safety Car](img/safety.png)
 
 
 - Y en tercer lugar sacamos la información de los pilotos mediante una API, una vez más cambiamos los nombres de las columnas, eliminamos columnas que no nos interesan y arreglamos los últimos detalles.
 
 
-![Drivers](img/drivers.png)
-
-
-<a name="carga"/>
+![Drivers](img/driver.png)
 
 ### Carga
 
