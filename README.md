@@ -32,7 +32,7 @@ En la fase de extracción nos dedicamos a buscar información acerca de los dife
 Como metodos de extracción, usamos en primer lugar, la descarga de los archivos csv en Kaggle, y por último, scrapeamos mediante selenium otras paginas web con la información que nos interesaba.
 
 <details>
-<summary>https://www.kaggle.com/</summary>
+<summary><b>https://www.kaggle.com/</b></summary>
 <br>
 
  ![F1 Dataset](img/kaggle.png)
@@ -40,7 +40,7 @@ Como metodos de extracción, usamos en primer lugar, la descarga de los archivos
 </details>
 
 <details>
-<summary>https://f1.fandom.com/wiki/Safety_Car</summary>
+<summary><b>https://f1.fandom.com/wiki/Safety_Car</b></summary>
 <br>
 
  ![F1 Safety Car](img/wiki-f1.png)
@@ -48,7 +48,7 @@ Como metodos de extracción, usamos en primer lugar, la descarga de los archivos
 </details>
 
 <details>
-<summary>http://ergast.com/api/f1/drivers?=123</summary>
+<summary><b>http://ergast.com/api/f1/drivers?=123</b></summary>
 <br>
 
 ![F1 API](img/api.png)
